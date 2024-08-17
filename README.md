@@ -29,6 +29,10 @@ This project is based on the Python programming language and primarily utilizes 
 conda create -n StreetFighterAI python=3.8.10
 conda activate StreetFighterAI
 
+# pip setuptools version downgrade, avoid gym problems
+python -m pip install pip==21 -U
+pip install setuptools==63.2.0
+
 # Install Python libraries
 cd [parent_directory_of_project]/street-fighter-ai/main
 pip install -r requirements.txt
