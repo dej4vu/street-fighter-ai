@@ -29,6 +29,10 @@
 conda create -n StreetFighterAI python=3.8.10
 conda activate StreetFighterAI
 
+# pip 及 setuptools 版本设置，以便安装gym
+python -m pip install pip==21 -U
+pip install setuptools==63.2.0
+
 # 安装 Python 代码库
 cd [项目上级文件夹]/street-fighter-ai/main
 pip install -r requirements.txt
